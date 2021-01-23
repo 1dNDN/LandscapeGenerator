@@ -29,12 +29,14 @@ namespace LandscapeGenerator
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.DisplayBox = new System.Windows.Forms.PictureBox();
 			this.SizeApplyButton = new System.Windows.Forms.Button();
 			this.WidthCounter = new System.Windows.Forms.NumericUpDown();
 			this.HeightCounter = new System.Windows.Forms.NumericUpDown();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
+			this.TimerTick = new System.Windows.Forms.Timer(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.DisplayBox)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.WidthCounter)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.HeightCounter)).BeginInit();
@@ -130,6 +132,12 @@ namespace LandscapeGenerator
 			this.label3.TabIndex = 6;
 			this.label3.Text = "Высота";
 			// 
+			// TimerTick
+			// 
+			this.TimerTick.Enabled = true;
+			this.TimerTick.Interval = 15;
+			this.TimerTick.Tick += new System.EventHandler(this.TimerTick_Tick);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -162,6 +170,7 @@ namespace LandscapeGenerator
         private System.Windows.Forms.NumericUpDown HeightCounter;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Timer TimerTick;
 	}
 }
 
