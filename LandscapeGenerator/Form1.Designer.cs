@@ -73,8 +73,8 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-			this.numericUpDown1.Location = new System.Drawing.Point(31, 426);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDown1.Location = new System.Drawing.Point(31, 426);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
             1920,
             0,
             0,
@@ -84,10 +84,10 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(60, 23);
-			this.numericUpDown1.TabIndex = 3;
-			this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(60, 23);
+            this.numericUpDown1.TabIndex = 3;
+            this.numericUpDown1.Value = new decimal(new int[] {
             800,
             0,
             0,
@@ -100,8 +100,8 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-			this.numericUpDown2.Location = new System.Drawing.Point(97, 426);
-			this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDown2.Location = new System.Drawing.Point(97, 426);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
             1080,
             0,
             0,
@@ -111,10 +111,10 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(60, 23);
-			this.numericUpDown2.TabIndex = 3;
-			this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(60, 23);
+            this.numericUpDown2.TabIndex = 3;
+            this.numericUpDown2.Value = new decimal(new int[] {
             500,
             0,
             0,
