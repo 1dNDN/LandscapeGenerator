@@ -34,6 +34,8 @@ namespace LandscapeGenerator
 			this.button1 = new System.Windows.Forms.Button();
 			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -51,7 +53,7 @@ namespace LandscapeGenerator
 			// 
 			this.button2.Location = new System.Drawing.Point(12, 12);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(159, 410);
+			this.button2.Size = new System.Drawing.Size(159, 46);
 			this.button2.TabIndex = 1;
 			this.button2.Text = "button2";
 			this.button2.UseVisualStyleBackColor = true;
@@ -73,8 +75,8 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(31, 426);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+			this.numericUpDown1.Location = new System.Drawing.Point(70, 93);
+			this.numericUpDown1.Maximum = new decimal(new int[] {
             1920,
             0,
             0,
@@ -84,10 +86,10 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(60, 23);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.Value = new decimal(new int[] {
+			this.numericUpDown1.Name = "numericUpDown1";
+			this.numericUpDown1.Size = new System.Drawing.Size(45, 23);
+			this.numericUpDown1.TabIndex = 3;
+			this.numericUpDown1.Value = new decimal(new int[] {
             800,
             0,
             0,
@@ -100,8 +102,8 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-            this.numericUpDown2.Location = new System.Drawing.Point(97, 426);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+			this.numericUpDown2.Location = new System.Drawing.Point(70, 64);
+			this.numericUpDown2.Maximum = new decimal(new int[] {
             1080,
             0,
             0,
@@ -111,20 +113,40 @@ namespace LandscapeGenerator
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(60, 23);
-            this.numericUpDown2.TabIndex = 3;
-            this.numericUpDown2.Value = new decimal(new int[] {
+			this.numericUpDown2.Name = "numericUpDown2";
+			this.numericUpDown2.Size = new System.Drawing.Size(45, 23);
+			this.numericUpDown2.TabIndex = 3;
+			this.numericUpDown2.Value = new decimal(new int[] {
             500,
             0,
             0,
             0});
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(12, 95);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(52, 15);
+			this.label1.TabIndex = 4;
+			this.label1.Text = "Ширина";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(12, 66);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(47, 15);
+			this.label3.TabIndex = 6;
+			this.label3.Text = "Высота";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(784, 461);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label1);
 			this.Controls.Add(this.numericUpDown2);
 			this.Controls.Add(this.numericUpDown1);
 			this.Controls.Add(this.button1);
@@ -139,6 +161,7 @@ namespace LandscapeGenerator
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -149,6 +172,8 @@ namespace LandscapeGenerator
 		private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
-    }
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label3;
+	}
 }
 
