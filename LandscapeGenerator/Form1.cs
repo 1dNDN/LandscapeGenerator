@@ -7,8 +7,8 @@ namespace LandscapeGenerator
     {
         public Form1() {
             InitializeComponent();
-            numericUpDown1.Value = this.Width;
-            numericUpDown2.Value = this.Height;
+            WidthCounter.Value = this.Width;
+            HeightCounter.Value = this.Height;
         }
 
         private void Form1_Resize(object sender, EventArgs e) {
@@ -16,10 +16,10 @@ namespace LandscapeGenerator
             button1.Width = Width - 205;
         }
 
-		private void button2_Click(object sender, EventArgs e)
+		private void SizeApplyButton_Click(object sender, EventArgs e)
 		{
-            this.Width = (int)numericUpDown1.Value;
-            this.Height = (int)numericUpDown2.Value;
+            this.Width = (int)WidthCounter.Value;
+            this.Height = (int)HeightCounter.Value;
         }
 	}
 }

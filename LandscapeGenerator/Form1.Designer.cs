@@ -30,15 +30,15 @@ namespace LandscapeGenerator
 		private void InitializeComponent()
 		{
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.button2 = new System.Windows.Forms.Button();
+			this.SizeApplyButton = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+			this.WidthCounter = new System.Windows.Forms.NumericUpDown();
+			this.HeightCounter = new System.Windows.Forms.NumericUpDown();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.WidthCounter)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.HeightCounter)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -49,15 +49,15 @@ namespace LandscapeGenerator
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
-			// button2
+			// SizeApplyButton
 			// 
-			this.button2.Location = new System.Drawing.Point(12, 12);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(159, 46);
-			this.button2.TabIndex = 1;
-			this.button2.Text = "Изменить размер";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.SizeApplyButton.Location = new System.Drawing.Point(12, 12);
+			this.SizeApplyButton.Name = "SizeApplyButton";
+			this.SizeApplyButton.Size = new System.Drawing.Size(159, 46);
+			this.SizeApplyButton.TabIndex = 1;
+			this.SizeApplyButton.Text = "Изменить размер";
+			this.SizeApplyButton.UseVisualStyleBackColor = true;
+			this.SizeApplyButton.Click += new System.EventHandler(this.SizeApplyButton_Click);
 			// 
 			// button1
 			// 
@@ -68,55 +68,55 @@ namespace LandscapeGenerator
 			this.button1.Text = "button1";
 			this.button1.UseVisualStyleBackColor = true;
 			// 
-			// numericUpDown1
+			// WidthCounter
 			// 
-			this.numericUpDown1.Increment = new decimal(new int[] {
+			this.WidthCounter.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
-			this.numericUpDown1.Location = new System.Drawing.Point(70, 93);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
+			this.WidthCounter.Location = new System.Drawing.Point(70, 93);
+			this.WidthCounter.Maximum = new decimal(new int[] {
             1920,
             0,
             0,
             0});
-			this.numericUpDown1.Minimum = new decimal(new int[] {
+			this.WidthCounter.Minimum = new decimal(new int[] {
             800,
             0,
             0,
             0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(45, 23);
-			this.numericUpDown1.TabIndex = 3;
-			this.numericUpDown1.Value = new decimal(new int[] {
+			this.WidthCounter.Name = "WidthCounter";
+			this.WidthCounter.Size = new System.Drawing.Size(45, 23);
+			this.WidthCounter.TabIndex = 3;
+			this.WidthCounter.Value = new decimal(new int[] {
             800,
             0,
             0,
             0});
 			// 
-			// numericUpDown2
+			// HeightCounter
 			// 
-			this.numericUpDown2.Increment = new decimal(new int[] {
+			this.HeightCounter.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-			this.numericUpDown2.Location = new System.Drawing.Point(70, 64);
-			this.numericUpDown2.Maximum = new decimal(new int[] {
+			this.HeightCounter.Location = new System.Drawing.Point(70, 64);
+			this.HeightCounter.Maximum = new decimal(new int[] {
             1080,
             0,
             0,
             0});
-			this.numericUpDown2.Minimum = new decimal(new int[] {
+			this.HeightCounter.Minimum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(45, 23);
-			this.numericUpDown2.TabIndex = 3;
-			this.numericUpDown2.Value = new decimal(new int[] {
+			this.HeightCounter.Name = "HeightCounter";
+			this.HeightCounter.Size = new System.Drawing.Size(45, 23);
+			this.HeightCounter.TabIndex = 3;
+			this.HeightCounter.Value = new decimal(new int[] {
             500,
             0,
             0,
@@ -147,19 +147,19 @@ namespace LandscapeGenerator
 			this.ClientSize = new System.Drawing.Size(784, 461);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.numericUpDown2);
-			this.Controls.Add(this.numericUpDown1);
+			this.Controls.Add(this.HeightCounter);
+			this.Controls.Add(this.WidthCounter);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.SizeApplyButton);
 			this.Controls.Add(this.pictureBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "Демонстрационная форма";
 			this.Resize += new System.EventHandler(this.Form1_Resize);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.WidthCounter)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.HeightCounter)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -168,10 +168,10 @@ namespace LandscapeGenerator
 		#endregion
 
 		private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SizeApplyButton;
 		private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown WidthCounter;
+        private System.Windows.Forms.NumericUpDown HeightCounter;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label3;
 	}
