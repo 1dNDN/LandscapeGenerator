@@ -12,8 +12,8 @@ namespace LandscapeGenerator
         }
 
         private void Form1_Resize(object sender, EventArgs e) {
-            button1.Height = Height - 63;
-            button1.Width = Width - 205;
+            PictureBox.Height = Height - 63;
+            PictureBox.Width = Width - 205;
         }
 
 		private void SizeApplyButton_Click(object sender, EventArgs e)

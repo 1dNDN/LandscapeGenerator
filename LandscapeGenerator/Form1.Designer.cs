@@ -29,25 +29,24 @@ namespace LandscapeGenerator
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.PictureBox = new System.Windows.Forms.PictureBox();
 			this.SizeApplyButton = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
 			this.WidthCounter = new System.Windows.Forms.NumericUpDown();
 			this.HeightCounter = new System.Windows.Forms.NumericUpDown();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.WidthCounter)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.HeightCounter)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// pictureBox1
+			// PictureBox
 			// 
-			this.pictureBox1.Location = new System.Drawing.Point(177, 12);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(595, 437);
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
+			this.PictureBox.Location = new System.Drawing.Point(177, 12);
+			this.PictureBox.Name = "PictureBox";
+			this.PictureBox.Size = new System.Drawing.Size(595, 437);
+			this.PictureBox.TabIndex = 0;
+			this.PictureBox.TabStop = false;
 			// 
 			// SizeApplyButton
 			// 
@@ -58,15 +57,6 @@ namespace LandscapeGenerator
 			this.SizeApplyButton.Text = "Изменить размер";
 			this.SizeApplyButton.UseVisualStyleBackColor = true;
 			this.SizeApplyButton.Click += new System.EventHandler(this.SizeApplyButton_Click);
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(177, 12);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(595, 437);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
 			// 
 			// WidthCounter
 			// 
@@ -149,15 +139,14 @@ namespace LandscapeGenerator
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.HeightCounter);
 			this.Controls.Add(this.WidthCounter);
-			this.Controls.Add(this.button1);
 			this.Controls.Add(this.SizeApplyButton);
-			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.PictureBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "Form1";
 			this.Text = "Демонстрационная форма";
 			this.Resize += new System.EventHandler(this.Form1_Resize);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.WidthCounter)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.HeightCounter)).EndInit();
 			this.ResumeLayout(false);
@@ -167,9 +156,8 @@ namespace LandscapeGenerator
 
 		#endregion
 
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox PictureBox;
         private System.Windows.Forms.Button SizeApplyButton;
-		private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown WidthCounter;
         private System.Windows.Forms.NumericUpDown HeightCounter;
 		private System.Windows.Forms.Label label1;
