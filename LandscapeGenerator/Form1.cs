@@ -17,5 +17,9 @@ namespace LandscapeGenerator
 			InitializeComponent();
 		}
 
-    }
+		private void Form1_Resize(object sender, EventArgs e) {
+            button1.Height = this.Height - 63;
+            button1.Width = this.Width - 205;
+        }
+	}
 }
