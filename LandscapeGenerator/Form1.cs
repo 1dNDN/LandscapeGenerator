@@ -22,7 +22,7 @@ namespace LandscapeGenerator
         }
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            this.Height = (int)numericUpDown1.Value;
+            this.Height = (int)numericUpDown2.Value;
         }
     }
 }
