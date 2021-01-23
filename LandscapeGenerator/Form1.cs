@@ -19,6 +19,8 @@ namespace LandscapeGenerator
         private void Form1_Resize(object sender, EventArgs e) {
             DisplayBox.Height = Height - 63;
             DisplayBox.Width = Width - 205;
+            ImageBitmap.Dispose();
+            GC.Collect();
             ImageBitmap = new DirectBitmap(DisplayBox.Width, DisplayBox.Height);
             ImageWasChanged = true;
         }
