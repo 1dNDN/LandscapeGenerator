@@ -7,7 +7,7 @@ namespace LandscapeGenerator
     {
         public DirectBitmap ImageBitmap;
         public bool ImageWasChanged = true;
-        private bool TickProceed = false;
+        private bool tickProceed = false;
 
         public Form1() {
             InitializeComponent();
@@ -32,13 +32,13 @@ namespace LandscapeGenerator
         }
 
 		private void TimerTick_Tick(object sender, EventArgs e) {
-            TickProceed = true;
+            tickProceed = true;
             if(ImageWasChanged)
-                if (!TickProceed) {
+                if (!tickProceed) {
                     DisplayBox.Image = ImageBitmap.Bitmap;
                     ImageWasChanged = false;
                 }
-            TickProceed = false;
+            tickProceed = false;
         }
 	}
 }
