@@ -9,7 +9,8 @@ namespace LandscapeGenerator
     public class DirectBitmap : IDisposable
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public DirectBitmap(int width, int height) {
+        public DirectBitmap(int width, int height)
+        {
             Width = width;
             Height = height;
             Bits = new int[width * height];
@@ -31,7 +32,8 @@ namespace LandscapeGenerator
         protected GCHandle BitsHandle { get; }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void Dispose() {
+        public void Dispose()
+        {
             if (Disposed) return;
             Disposed = true;
             Bitmap.Dispose();
@@ -39,7 +41,8 @@ namespace LandscapeGenerator
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void SetPixel(int x, int y, Color colour) {
+        public void SetPixel(int x, int y, Color colour)
+        {
             int index = x + y * Width;
             int col = colour.ToArgb();
 
@@ -47,12 +50,14 @@ namespace LandscapeGenerator
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void SetPixel(int x, int y, int colour) {
+        public void SetPixel(int x, int y, int colour)
+        {
             Bits[x + y * Width] = colour;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Color GetPixel(int x, int y) {
+        public Color GetPixel(int x, int y)
+        {
             int index = x + y * Width;
             int col = Bits[index];
             Color result = Color.FromArgb(col);

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LandscapeGenerator.BitmapGenerator
+﻿namespace LandscapeGenerator.BitmapGenerator
 {
     public interface IBitmapGenerator
     {
